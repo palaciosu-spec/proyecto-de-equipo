@@ -18,7 +18,18 @@ def registrar_alumno():
 
     alumnos.append(alumno)
     print("✅ Alumno registrado correctamente\n")
+    
+# mostrar.py
 
+def mostrar_alumnos(alumnos):
+    print(“=== Lista de Alumnos ===“)
+    
+    if len(alumnos) == 0:
+        print(“No hay alumnos registrados”)
+    
+    for a in alumnos:
+        print(f”Nombre: {a[‘nombre’]} | Edad: {a[‘edad’]} | Grupo: {a[‘grupo’]}”)
+        
 # main.py
 
 from registro import registrar_alumno
