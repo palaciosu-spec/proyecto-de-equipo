@@ -19,13 +19,6 @@ def registrar_alumno():
     alumnos.append(alumno)
     print("✅ Alumno registrado correctamente\n")
 
-# main.py
-
-from registro import registrar_alumno
-from mostrar import mostrar_alumnos
-
-alumnos = []
-
 while True:
     print(“\n1. Registrar alumno”)
     print(“2. Mostrar alumnos”)
